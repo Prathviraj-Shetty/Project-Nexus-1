@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    transform: rotateY(180deg);
+}
+
+.container {
+    position: fixed;
+    width: 30vw;
+    height: 70vh;
+    top: 15vh;
+    left: 35vw;
+    border:4px solid rgb(142, 138, 138);
+    border-radius: 90px;
+    background: rgba(107, 103, 103, 0.5);
+
+}
+input{
+    position: relative;
+    left: 3vh;
+    width: 24vw;
+    height: 7vh;
+    border-radius: 70px;
+    font-size: 60px;
+    background-color: rgba(165, 157, 157, 0.655);
+    border: 1px solid rgb(92, 91, 91);
+}
+
+#login {
+    position: relative;
+    top: 6vh;
+    left: 12vw;
+    font-size: 110px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(237, 225, 225);
+}
+
+hr {
+    position: relative;
+    top: 10vh;
+    color: whitesmoke;
+    border: 2px dashed rgb(237, 225, 225);
+
+
+
+}
+
+#username {
+    position: relative;
+    top: 18vh;
+    font-size: 37px;
+    left: 4vw;
+    color: azure;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.uname {
+    position: relative;
+    top: 20vh;   
+}
+
+#password {
+    position: relative;
+    top: 23vh;
+    font-size: 37px;
+    left: 4vw;
+    color: azure;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Pword {
+    position: relative;
+    top: 24vh;
+   
+}
+
+#ready,#register {
+    position: relative;
+    top: 32vh;
+    left: 3vw;
+    width: 24vw;
+    height: 7vh;
+    border-radius: 70px;
+    background: linear-gradient(90deg, #ff006f, #e075c4, #7375ed, #774eff);
+    border: 1px solid black;
+    font-size: 60px;
+    text-align: center;
+    line-height: 6vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* -------------------------------------2nd page------------------------------------------------------------------------------ */
+#logo {
+    position: fixed;
+    top: 6vh;
+    left: 46vw;
+    height: 50px;
+    border: 10px solid  rgb(96, 93, 93);
+    background-color: #fff;
+    width: 8vw;
+    height: 15vh;
+
+    border-radius: 100%;
+}
+
+.container2 {
+    position: fixed;
+    width: 30vw;
+    height: 80vh;
+    top: 13vh;
+    left: 35vw;
+    border:4px solid rgb(142, 138, 138);
+    border-radius: 90px;
+    background: rgba(107, 103, 103, 0.5);
+
+}
+
+#rname {
+    position: relative;
+    top: 10vh;
+    font-size: 40px;
+    left: 4vw;
+    color: azure;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tname {
+    position: relative;
+    top: 11vh;
+}
+#remail {
+
+    position: relative;
+    top: 15vh;
+    font-size: 40px;
+    left: 4vw;
+    color: azure;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.temail {
+    position: relative;
+    top: 16vh;
+}
+
+#rpassword {
+
+    position: relative;
+    top: 20vh;
+    font-size: 40px;
+    left: 4vw;
+    color: azure;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tpassword {
+    position: relative;
+    top: 21vh;
+}
+
+#cpassword {
+
+    position: relative;
+    top: 25vh;
+    font-size: 40px;
+    left: 4vw;
+    color: azure;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tcpassword {
+    position: relative;
+    top: 26vh;
+}
