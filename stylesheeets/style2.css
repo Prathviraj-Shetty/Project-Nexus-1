@@ -1,0 +1,118 @@
+
+@font-face {font-family:"Abel-Regular"; src: url("Abel-Regular.ttf") format("truetype");font-weight:normal;font-style:normal;}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.img-container{
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+#background{
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+
+    transform: scaleX(-1);
+}
+.outer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    
+    min-width: 23rem;
+    background-color: rgba(121, 121, 121, 0.44);
+    border: 1px solid #d6d6d684;
+    padding: 1rem 0 1rem 0;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.top{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 1rem 0;
+    font-family:  'Abel-Regular';
+    font-size: 2rem;
+}
+.top-content{
+    
+}
+hr{
+    width: 90%;
+    height: 1px;
+    background-color: #d6d6d684;
+    border: none;
+    z-index: 2;
+    
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+
+}
+#sub{
+    content: "GET STARTED";
+    font-family: 'Abel-Regular';
+    letter-spacing: 0.09em;
+    border-radius: 300px;
+    width: 79%;
+    height: 2rem;
+    margin: 1rem 0 1rem 0;
+    font-weight: 400;
+    border: none;
+    padding: 0 0.5rem 0 0.5rem;
+    background: linear-gradient(274.71deg, #1592D9 -2.6%, #CB5E8D 89.28%);background: linear-gradient(274.71deg, #1592D9 -2.6%, #CB5E8D 89.28%);
+    text-decoration: underline;
+}
+.input-box{
+    margin: auto;
+    background-color: #B7B7B7;
+    border: 1px solid rgba(255, 255, 255, 0.79);
+    opacity: 0.6;
+    border-radius: 300px;
+    width: 75%;
+    height: 2rem;
+    margin: 0 0 1rem 0;
+    padding-left: 1rem;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.input-box::focus{
+    border: none;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+label{
+    font-size: small;
+    font-family: 'Abel-Regular';
+    color: white;
+    width: 75%;
+    margin-bottom: 0.3rem;
+
+}
+.bottom a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Abel-Regular';
+}
+.bottom{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
