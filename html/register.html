@@ -6,27 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatApp</title>
-    <link rel="stylesheet" href="../stylesheeets/style.css">
+    <link rel="stylesheet" href="../stylesheeets/style2.css">
 </head>
 
 <body>
-    <img id="background" src="../images/background.jpg" alt="">
-    
-   
-    <div class="container2">
-        <img id="logo" src="../images/logo.jpg" alt="">
-        <div id="rname">Name</div>
-        <input class="tname" type="text">
-        <div id="remail">Email</div>
-        <input class="temail" type="text">
-        <div id="rpassword">Password</div>
-        <input class="tpassword" type="text">
-        <div id="cpassword">Confirm Password</div>
-        <input class="tcpassword" type="text">
-        <div id="register"><u>REGISTER</u></div>
+    <div class="img-container">
+        <img id="background" src="../images/background.jpg" alt="">
+    </div>
+    <div class="outer-container">
+        <div class="container">
+            <div class="logo-container">
+                <div class="inner-logo-container">
 
+                    <img src="../images/Logo.png" class="logo" alt="error">
+                </div>
+            </div>
+            
+            <div class="input">
+                <label for="name">Name</label>
+                <input class="input-box" id="name" type="text">
+                <label for="email">Email</label>
+                <input class="input-box" id="email" type="text">
+                <label for="password">Password</label>
+                <input class="input-box" id="password" type="password">
+                <label for="confirm-password">Confirm Password</label>
+                <input class="input-box" id="confirm-password" type="password">
+                <a href="./home.html" class="submit">Sign in</a>
+                
+            </div>
+
+        </div>
     </div>
 
 </body>
+
 
 </html>

@@ -64,8 +64,10 @@ hr{
     padding-top: 1rem;
 
 }
-#sub{
-    content: "GET STARTED";
+
+
+
+.submit{
     font-family: 'Abel-Regular';
     letter-spacing: 0.09em;
     border-radius: 300px;
@@ -74,9 +76,12 @@ hr{
     margin: 1rem 0 1rem 0;
     font-weight: 400;
     border: none;
-    padding: 0 0.5rem 0 0.5rem;
+    padding-top: 0.5rem;
+    vertical-align: middle;
     background: linear-gradient(274.71deg, #1592D9 -2.6%, #CB5E8D 89.28%);background: linear-gradient(274.71deg, #1592D9 -2.6%, #CB5E8D 89.28%);
-    text-decoration: underline;
+    text-decoration: none;
+    text-align: center;
+    color: white;
 }
 .input-box{
     margin: auto;
@@ -90,7 +95,7 @@ hr{
     padding-left: 1rem;
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
 }
-.input-box::focus{
+.input-box:focus{
     border: none;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
 }
@@ -112,4 +117,32 @@ label{
     width: 90%;
     justify-content: space-between;
     padding-top: 2rem;
+}
+
+.logo-container{
+    position: relative;
+    height: 0;
+
+    top: -3.5rem;
+    right: 2.5rem;
+}
+.inner-logo-container{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(121, 121, 121, 0.44);
+    border: 1px solid #d6d6d684;
+    
+    overflow: hidden;
+    border-radius: 32323px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    max-width: 6rem;
+    height: auto;
+    
+    
+
 }
