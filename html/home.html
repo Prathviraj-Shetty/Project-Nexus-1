@@ -1,68 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../stylesheeets/feed.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      *
-      {
-        box-sizing: border-box;
-        margin: 0;
-      }
-      #grid
-      {
-       display: grid; 
-       grid-template-columns: 250px auto ;
-      }
-      #sideNav
-      {
-        height: 100vh;
-        width:250px;
-        background-color: aquamarine;
-      }
-      #sideNav h3{
-        padding:2rem;
-      }
-      #sideNav-Elements
-      {
-        list-style-type: none;
-        margin-top: 1.5rem;
-      }
-      #sideNav-Elements li,a{
-        text-decoration: none;
-        margin-bottom: 2rem;
-        font-size: 1.2rem;
-      }
-      #feed
-      {
-        background-color:rgb(244, 244, 243);
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../stylesheeets/feed.css">
+  <link rel="stylesheet" href="../stylesheeets/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+  </style>
 </head>
+
 <body>
-  <div id="grid">
-  <div id="sideNav">
-    <h3>PROJECT-NEXUS</h3>
-    <ul id="sideNav-Elements">
-      <div class="three col">
-        <div class="hamburger" id="hamburger-1">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
+  <div id="flex">
+    <div id="sideNav">
+      <h3>PROJECT-NEXUs</h3>
+      <ul id="sideNav-Elements">
+        <div class="three col">
+          <div class="hamburger" id="hamburger-1">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+        <li><a href="#"><i class="fa fa-home" style="margin-right:14px"></i>Home</a></li>
+        <li><a href="#"><i class="fa fa-user" style="margin-right:14px"></i>Profile</a></li>
+        <li><a href="./feed.html"><i class="fa fa-photo" style="margin-right:14px"></i>Feed</a></li>
+        <li><a href="#"><i class="fa fa-comments" style="margin-right:14px"></i>Chat</a></li>
+        <li><a href="#"><i class="fa fa-bell" style="margin-right:14px"></i>Notification</a></li>
+        <li><a href="./login2.html"><i class="fa fa-home" style="margin-right:14px"></i>Logout</a></li>
+      </ul>
+    </div>
+    <div id="posts">
+      <div class="post1">
+
+        <div class="post-wrapper">
+          <div class="post-details">
+            <div class="profile-wrapper">
+
+              <div class="profile-image">
+                <img id="profile-image" src="../images/profile.png" alt="">
+              </div>
+              <span><b>Lil Ladder</b></span>
+            </div>
+            
+            <div class="discriptions">
+              I love tanjiro Lorem  repellendus Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, soluta nostrum neque qui quo harum totam hic quidem architecto dolor. Quas, eius ipsam? dignissimos eveniet?
+            </div>
+          </div>
+          <div class="image"><img class="post-image" src="../images/Kimetsu-no-YaibaDemon-Slayer.jpg" alt="error: Could not load"></div>
+          <div class="post-footer">
+            buttens here
+          </div>
         </div>
       </div>
-      <li><a href="#"><i class="fa fa-home" style="margin-right:14px"></i>Home</a></li>
-      <li><a href="#"><i class="fa fa-user" style="margin-right:14px"></i>Profile</a></li>
-      <li><a href="./feed.html"><i class="fa fa-photo" style="margin-right:14px"></i>Feed</a></li>
-      <li><a href="#"><i class="fa fa-comments" style="margin-right:14px"></i>Chat</a></li>
-      <li><a href="#"><i class="fa fa-bell" style="margin-right:14px"></i>Notification</a></li>
-      <li><a href="./login2.html"><i class="fa fa-home" style="margin-right:14px"></i>Logout</a></li>
-    </ul>
+    </div>
+    <div class="right-block">
+      <div class="search-chat"></div>
+      <ul class="chat-list">
+        <li>
+          spencer
+        </li>
+        <li>
+          gooooo
+        </li>
+        <li>deep</li>
+
+      </ul>
+    </div>
   </div>
-  <div id="posts"> </div>
-</div>
-  </body>
+</body>
+
 </html>
