@@ -4,12 +4,11 @@
         margin: 0;
         padding: 0;
       }
-      #flex
-      {
-       display: flex; 
-       justify-content: space-between;
-       
-      }
+      #grid
+{
+ display: grid; 
+ grid-template-columns: 250px auto 300px ;
+}
       #sideNav
       {
         height: 100vh;
@@ -38,8 +37,10 @@
         padding: 1rem;
         border: 1px solid black;
         border-radius: 10px;
-        width:100%;
+        width:600px;
         display: inline-block;
+        margin:10px;
+        justify-self: center
       }
       .discriptions{
         width: 40vw;

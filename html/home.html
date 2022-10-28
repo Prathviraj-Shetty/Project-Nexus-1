@@ -14,9 +14,9 @@
 </head>
 
 <body>
-  <div id="flex">
+  <div id="grid">
     <div id="sideNav">
-      <h3>PROJECT-NEXUs</h3>
+      <h3>PROJECT-NEXUS</h3>
       <ul id="sideNav-Elements">
         <div class="three col">
           <div class="hamburger" id="hamburger-1">
@@ -25,7 +25,7 @@
             <span class="line"></span>
           </div>
         </div>
-        <li><a href="#"><i class="fa fa-home" style="margin-right:14px"></i>Home</a></li>
+        <li><a href="./home.html"><i class="fa fa-home" style="margin-right:14px"></i>Home</a></li>
         <li><a href="#"><i class="fa fa-user" style="margin-right:14px"></i>Profile</a></li>
         <li><a href="./feed.html"><i class="fa fa-photo" style="margin-right:14px"></i>Feed</a></li>
         <li><a href="#"><i class="fa fa-comments" style="margin-right:14px"></i>Chat</a></li>
@@ -35,7 +35,13 @@
     </div>
     <div id="posts">
       <div class="post1">
-
+<div class="form">
+  <form action="" id="contactForm">
+    image :<input type="file" id="img" name="img" accept="image/*">
+    description : <input type="text" name="desc" id="desc">
+     <input type="button" value="submit">
+  </form>
+</div>
         <div class="post-wrapper">
           <div class="post-details">
             <div class="profile-wrapper">
@@ -71,6 +77,8 @@
       </ul>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="../scripts/post.js"></script>
 </body>
 
 </html>

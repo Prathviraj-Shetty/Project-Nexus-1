@@ -33,6 +33,7 @@ btn.addEventListener('click',()=>{
     fetch(`https://www.reddit.com/r/memes.json?after=${after}`)
     .then(response=>response.json())
     .then(body=>{
+        console.log(body)
         after=body.data.after
         for(let index=0;index<body.data.children.length;index++)
         {
