@@ -1,13 +1,52 @@
-const firebaseConfig = {
-    apiKey: "AIzaSyBiSQaUli0rNKsIsUt0oFWpN7wGn5M959U",
-    authDomain: "project-nexus-d83f1.firebaseapp.com",
-    databaseURL: "https://project-nexus-d83f1-default-rtdb.firebaseio.com",
-    projectId: "project-nexus-d83f1",
-    storageBucket: "project-nexus-d83f1.appspot.com",
-    messagingSenderId: "927576800227",
-    appId: "1:927576800227:web:144d4de91125d8c0323ed6"
-  };
-  //initialize firebase
-  firebase.initializeApp(firebaseConfig);
+var ImgName,ImgUrl;
+var files=[];
+var reader;
 
-//refernce for database
+//config
+const firebaseConfig = {
+apiKey: "AIzaSyASbdInIwg6YBni_bHpZp_UiHqSmlvq5SI",
+authDomain: "fir-1bb2b.firebaseapp.com",
+databaseURL: "https://fir-1bb2b-default-rtdb.firebaseio.com",
+projectId: "fir-1bb2b",
+storageBucket: "fir-1bb2b.appspot.com",
+messagingSenderId: "430569687878",
+appId: "1:430569687878:web:1b8b4cc8574ea52c633347"
+};
+firebase.initializeApp(firebaseConfig)
+
+document.getElementById("select").onclick=function(e){
+var input=document.createElement('input')
+input.type='file'
+
+input.onchange= e =>{
+    files=e.target.files;
+    reader=new FileReader();
+    reader.onload=function(){
+        document.getElementById("myimg").src=reader.result;
+    }
+    reader.readAsDataURL(files[0])
+}
+input.click();
+}
+// uploading picture to storage
+document.getElementById('upload').onclick=function(){
+ImgName=document.getElementById('namebox').value;
+var uploadTask=firebase.storage().ref('Images/'+ImgName+".png").put(files[0]);
+uploadTask.on('state_changed',function(snapshot){
+var UpProgress=(snapshot.bytesTransferred/snapshot.totalBytes)*100;
+document.getElementById("UpProgress").innerHTML='Upload'+UpProgress+'%';
+},
+function(error){alert("error in saving the image")},
+function(){
+    uploadTask.snapshot.ref.getDownloadURL().then(function(url){
+        ImgUrl=url;
+        firebase.database().ref('Pictures/'+ImgName).set({
+       Name:ImgName,
+       Link:ImgUrl 
+    });
+    alert("Image added Successfully");
+    }
+    );
+   
+});
+}
