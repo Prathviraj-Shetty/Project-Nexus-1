@@ -5,129 +5,114 @@
 } */
 
 body {
-    background: linear-gradient(90deg,rgb(172, 211, 242),rgb(106, 158, 236),rgb(122, 194, 212));
 }
 
 
 .struct {
-   
     position: relative;
     border: 2px solid black;
     background: linear-gradient(90deg,rgb(143, 233, 255),rgb(106, 158, 236),rgb(130, 230, 255));
     border-radius: 3rem;
     height:600px;
 
-}
-
-#cover-img {
-    position: relative;
-    border-radius: 3rem 3rem 0rem 0rem;
-    top: -1px;
-    width: 29.8rem;
-    height: 10rem;
-    border: 2px solid black;
-}
-
-#profile-img {
-    position: absolute;
-    top: 4rem;
-    left: 11rem;
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-    border: 2px solid black;
-}
-
-#name {
-    position: relative;
-    top: 3rem;
-    text-align: center;
-    font-size: larger;
-    transform: scale(2, 2);
 
 }
-
-#email {
-    position: relative;
-    top: 4rem;
-    text-align: center;
-}
-
-#bio {
-    position: relative;
-    top: 5rem;
-    left: 2rem;
-}
-
-#grid1 {
-    display: grid;
-    position: relative;
-    top: 5rem;
-    grid-template-columns: auto auto auto;
-    text-align: center;
-    /* justify-content: space-around; */
-}
-
-#posts,
-#followers,
-#following {
-    border: 2px solid black;
-    border-radius: 2rem;
-    height: 3rem;
-    margin: 1.5rem;
-
-}
-
-#edit {
-    position: relative;
-    top: 10rem;
-    left: 10rem;
-    width: 9rem;
-    height: 3rem;
-    font-weight: bold;
-    font-size: larger;
-    color: pink;
-    background-color: black;
-    border-radius: 20px;
-}
-
-form {
-    position: relative;
-    top: 3rem;
-    left: 3rem;
-    line-height: 2rem;
-}
-
-form input {
-    border-radius: 1rem;
-    width: 20rem;
-    height: 2rem;
-    font-size: larger;
-    text-transform: capitalize;
-}
-
-#save {
-    position: relative;
-    top: 7rem;
-    left: 10rem;
-    width: 9rem;
-    height: 3rem;
-    font-weight: bold;
-    font-size: larger;
-    color: pink;
-    background-color: black;
-    border-radius: 20px;
-}
-
-#edit>a,#save>a {
-
-    text-decoration: none;
-    color: white;
-
-}
-#flex
-{
+.detail-intro {
     display: flex;
-    align-items: center;
+    gap: 2rem;
+    display: relative;
+    padding: 3rem;
+
+}
+.image-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 200px;
+    /* border: 1px solid black; */
+    transition: border-radius 0.5s ease;
+}
+.image-container:hover,img:hover{
+    border-radius: 20px;
+}
+img{
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+.actual-profile{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    display: relative;
+
+}
+.bio-section{
+    padding: 2rem 0;
+}
+.edit-btn{
+    float: right;
+    right: 0;
+    top: 0;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    font-size: large;
+    
+}
+.name-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+}
+
+.actual-profile span{
+    font-size: smaller;
+}
+.tiny-details span{
+    color: rgba(79, 79, 79, 0.824);
+}
+hr{
+    width: 90%;
+    margin: auto;
+}
+.post-followers-following-container{
+    width: 90%;
+    margin: auto;
+    
+}
+.post-followers-following-buttons hr{
+    height: 2rem;
+    width: 1px;
+}
+
+.post-followers-following-buttons{
+    display: flex;
+    justify-content: center;
+}
+.post-followers-following-contents{
+    
+}
+.btn{
+    width: 33.333333%;
+    height: 2rem;
+    background: white;
+    border: none;
+}
+.btn:hover{
+    background: rgb(239, 239, 237);
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+
+
+.post{
+    height: 10rem;
+    width: 100%;
+    background-color:rgba(79, 79, 79, 0.824);
+    border-radius: 3px;
 }
