@@ -2,7 +2,35 @@
     margin: 0;
     padding: 0;
 }
+#grid
+{
+ display: grid; 
 
+ grid-template-columns: 250px auto  ;
+
+
+}
+#sideNav
+{ padding: 5px 20px;
+  min-height: 100vh;
+  width:250px;
+  background:linear-gradient(rgb(172, 220, 246), rgb(203, 203, 200));
+  position: sticky;
+  top: 0;
+}
+#sideNav h3{
+  padding:1rem;
+}
+#sideNav-Elements
+{
+  list-style-type: none;
+  margin-top: 1.5rem;
+}
+#sideNav-Elements li,a{
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
 #background {
     z-index: -1;
     width: 100vw;
@@ -21,16 +49,6 @@
     background: rgba(107, 103, 103, 0.5);
 
 }
-input{
-    position: relative;
-    left: 3vh;
-    width: 24vw;
-    height: 7vh;
-    border-radius: 70px;
-    font-size: 60px;
-    background-color: rgba(165, 157, 157, 0.655);
-    border: 1px solid rgb(92, 91, 91);
-}
 
 #login {
     position: relative;
@@ -43,9 +61,8 @@ input{
 
 hr {
     position: relative;
-    top: 10vh;
     color: whitesmoke;
-    border: 2px dashed rgb(237, 225, 225);
+    border: 2px solid  rgb(114, 110, 110);
 
 
 

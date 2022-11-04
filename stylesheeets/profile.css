@@ -67,6 +67,7 @@ img{
 hr{
     width: 90%;
     margin: auto;
+    background-color: rgb(114, 110, 110);
 }
 .post-followers-following-container{
     width: 90%;
@@ -76,6 +77,7 @@ hr{
 .post-followers-following-buttons hr{
     height: 2rem;
     width: 1px;
+    background-color: rgb(81, 80, 80);
 }
 
 .post-followers-following-buttons{
