@@ -69,6 +69,7 @@
       }
       .right-block{
         width: 250px; 
+        margin:20px;
       }
       .image{
         border-radius: 10px;
@@ -94,5 +95,6 @@
   justify-content: flex-start;
   border: 1px solid black;
   width: 700px;
+  height:300px;
   margin: 10px;
 }

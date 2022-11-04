@@ -10,16 +10,12 @@ body {
 
 
 .struct {
+   
     position: relative;
-    top: 1rem;
-    left: 35rem;
-    width: 30rem;
-    height: 38rem;
-    /* background: rgba(232, 227, 227, 0.5); */
     border: 2px solid black;
-    /* background: linear-gradient(90deg, rgb(249, 207, 138), rgb(237, 212, 67)); */
     background: linear-gradient(90deg,rgb(143, 233, 255),rgb(106, 158, 236),rgb(130, 230, 255));
     border-radius: 3rem;
+    height:600px;
 
 }
 
@@ -128,4 +124,10 @@ form input {
     text-decoration: none;
     color: white;
 
+}
+#flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
