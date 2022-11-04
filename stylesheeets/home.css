@@ -1,100 +1,80 @@
-*
-      {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      #grid
-{
- display: grid; 
- grid-template-columns: 250px auto 300px ;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-      #sideNav
-      {
-        height: 100vh;
-        width:250px;
-        background-color: aquamarine;
-      }
-      #sideNav h3{
-        padding:2rem;
-      }
-      #sideNav-Elements
-      {
-        list-style-type: none;
-        margin-top: 1.5rem;
-        padding: 2rem;
-      }
-      #sideNav-Elements li,a{
-        text-decoration: none;
-        margin-bottom: 2rem;
-        font-size: 1.2rem;
-      }
-      #feed
-      {
-        background-color:rgb(244, 244, 243);
-      }
-      .post-wrapper{
-        padding: 1rem;
-        border: 1px solid black;
-        border-radius: 10px;
-        width:700px;
-        display: inline-block;
-        margin:10px;
-        justify-self: center
-      }
-      .discriptions{
-        width: 40vw;
-        margin: 0;
-      }
-      .post-image{
-        width: 100%;
-      
-      }
-      .profile-image{
-        width: 40px;
-        height: 40px;
-        border-radius: 23423px;
-        overflow: hidden;
-        display: inline-block;
-      }
-      .profile-wrapper{
-        display:flex;
-        align-items: center;
-        gap: 1rem;
-        margin-bottom: 1rem;
-      }
-      #profile-image{
-        width: 40px;
-        height: auto;
-      }
-      .right-block{
-        width: 250px; 
-        margin:20px;
-      }
-      .image{
-        border-radius: 10px;
-        background-color: black;
-        display: inline-block;
-        overflow: hidden;
-        font-size: 0;
-        margin-top: 1rem;
-      }
-      .post-footer{
-        width: 40vw;
-      }
-      #myimg
-{
+
+
+.post-wrapper {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 700px;
+  display: inline-block;
+  margin: 10px;
+  justify-self: center
+}
+
+.discriptions {
+  width: 40vw;
+  margin: 0;
+}
+
+.post-image {
+  width: 100%;
+
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 23423px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#profile-image {
+  width: 40px;
+  height: auto;
+}
+
+.right-block {
+  width: 250px;
+  margin: 20px;
+}
+
+.image {
+  border-radius: 10px;
+  background-color: black;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 0;
+  margin-top: 1rem;
+}
+
+.post-footer {
+  width: 40vw;
+}
+
+#myimg {
   height: 100px;
   width: 100px;
 }
-.form
-{
+
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   border: 1px solid black;
   width: 700px;
-  height:300px;
+  height: 300px;
   margin: 10px;
 }
