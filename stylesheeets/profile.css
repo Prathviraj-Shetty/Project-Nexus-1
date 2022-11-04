@@ -24,8 +24,12 @@ body {
     height: 200px;
     overflow: hidden;
     text-align: center;
-    border-radius: 22323px;
-    border: 1px solid black;
+    border-radius: 200px;
+    /* border: 1px solid black; */
+    transition: border-radius 0.5s ease;
+}
+.image-container:hover,img:hover{
+    border-radius: 20px;
 }
 img{
     display: block;
@@ -39,12 +43,67 @@ img{
     display: relative;
 
 }
-.actual-profile button{
-    display: absolute;
+.bio-section{
+    padding: 2rem 0;
+}
+.edit-btn{
+    float: right;
     right: 0;
     top: 0;
+    height: 2rem;
     width: 2rem;
+    text-align: center;
+    font-size: large;
+    
 }
+.name-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+}
+
 .actual-profile span{
     font-size: smaller;
+}
+.tiny-details span{
+    color: rgba(79, 79, 79, 0.824);
+}
+hr{
+    width: 90%;
+    margin: auto;
+}
+.post-followers-following-container{
+    width: 90%;
+    margin: auto;
+    
+}
+.post-followers-following-buttons hr{
+    height: 2rem;
+    width: 1px;
+}
+
+.post-followers-following-buttons{
+    display: flex;
+    justify-content: center;
+}
+.post-followers-following-contents{
+    
+}
+.btn{
+    width: 33.333333%;
+    height: 2rem;
+    background: white;
+    border: none;
+}
+.btn:hover{
+    background: rgb(239, 239, 237);
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.post{
+    height: 10rem;
 }
