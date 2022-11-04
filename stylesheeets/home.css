@@ -37,7 +37,7 @@
         padding: 1rem;
         border: 1px solid black;
         border-radius: 10px;
-        width:600px;
+        width:700px;
         display: inline-block;
         margin:10px;
         justify-self: center
@@ -47,7 +47,7 @@
         margin: 0;
       }
       .post-image{
-        width: 40vw;
+        width: 100%;
       
       }
       .profile-image{
@@ -93,6 +93,6 @@
   align-items: center;
   justify-content: flex-start;
   border: 1px solid black;
-  width: 400px;
+  width: 700px;
   margin: 10px;
 }

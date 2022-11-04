@@ -1,7 +1,7 @@
 var ImgName,ImgUrl;
 var files=[];
 var reader;
-
+var i=1;
 //config
 const firebaseConfig = {
 apiKey: "AIzaSyASbdInIwg6YBni_bHpZp_UiHqSmlvq5SI",
@@ -42,7 +42,7 @@ function(){
         ImgUrl=url;
         firebase.database().ref('Pictures/'+ImgName).set({
        Name:ImgName,
-       Link:ImgUrl 
+       Link:ImgUrl ,
     });
     alert("Image added Successfully");
     }
@@ -50,3 +50,25 @@ function(){
    
 });
 }
+
+//Retrieve Images
+function addItemToList(desc,link){
+    var post=document.getElementById('posts')
+    var image=document.createElement('img')
+    image.src=link;
+    var cap=document.createElement('span')
+    cap.innerHTML=`${desc}`
+post.appendChild(image)
+post.appendChild(cap)
+}
+
+function FetchAllData(){
+    var db=firebase.database().ref().child("Pictures")
+    db.on("value", function(b)
+    {
+    console.log(b);
+    })
+}
+        
+
+window.onload=FetchAllData()
