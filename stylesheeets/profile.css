@@ -29,7 +29,9 @@ body {
 img{
     display: block;
     margin: auto;
-    width: 200px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
 }
 .actual-profile{
     display: flex;

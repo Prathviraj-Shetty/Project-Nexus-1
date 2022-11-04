@@ -25,12 +25,28 @@
 
 }
 
-.profile-image {
-  width: 40px;
-  height: 40px;
-  border-radius: 23423px;
-  overflow: hidden;
-  display: inline-block;
+.profile-image  {
+  display: flex;
+  height: 60px;
+  width:80px;
+  align-self: center;
+  justify-self: center;
+  
+ 
+
+}
+
+
+#profile-image
+{
+  width: 65px !important;
+  height: auto;
+}
+.profile-image img
+{
+  width:50px;
+  border-radius: 50%;
+
 }
 
 .profile-wrapper {
@@ -64,8 +80,9 @@
 }
 
 #myimg {
-  height: 100px;
-  width: 100px;
+  height: 165px;
+  width: 165px;
+  display: inline;
 }
 
 .form {
@@ -75,6 +92,22 @@
   justify-content: flex-start;
   border: 1px solid black;
   width: 700px;
-  height: 300px;
+  height: 370px;
   margin: 10px;
+}
+.form h3
+{
+  margin-bottom: 30px;
+}
+.flex
+{
+  display: flex;
+  flex-direction: row;
+  /* margin:10px; */
+}
+.flex button{
+  height: 20px;
+  width:100px;
+  margin-left: 20px;
+  margin-top: 20px;;
 }
