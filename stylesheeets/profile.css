@@ -7,11 +7,6 @@
 body {
 }
 
-
-.struct {
-    width: 100%;
-
-}
 .detail-intro {
     display: flex;
     gap: 2rem;
@@ -104,8 +99,8 @@ hr{
     margin-top: 4px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 4px;
-
 }
+
 .post{
     height: 10rem;
     width: 100%;
