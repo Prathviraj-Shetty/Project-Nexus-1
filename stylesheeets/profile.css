@@ -102,8 +102,12 @@ hr{
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
 
 }
 .post{
     height: 10rem;
+    width: 100%;
+    background-color:rgba(79, 79, 79, 0.824);
+    border-radius: 3px;
 }
